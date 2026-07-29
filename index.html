@@ -20,10 +20,14 @@
                 max-width: 800px;
                 margin: 0 auto;
                 padding: 16px;
+                display: flex;
             }
             img {
                 width: 80px;
                 height: 80px;
+            }
+            .artigo-autor {
+                font-weight: bold;
             }
         </style>
     </head>
@@ -34,9 +38,11 @@
         </header>
         <main>
             <img src="imagem-blog.png" alt="Ilustração vetorial minimalista de uma bola de futebol centralizada sobre um livro aberto. Acima da bola, há cinco setas apontando para cima. A arte utiliza uma paleta de cores em vermelho escuro para os contornos e detalhes, com um fundo totalmente branco.">
-            <h2>Meu primeiro post</h2>
-            <p>Por: Heitor Costa Curta Rodrigues</p>
-            <p>Boas-vindas ao meu novo blog! Aqui vou postar tudo sobre os campeonatos nacionais, contratações e as principais histórias dos gramados ao redor do mundo.</p>
+            <div>
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Heitor Costa Curta Rodrigues</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou postar tudo sobre os campeonatos nacionais, contratações e as principais histórias dos gramados ao redor do mundo
+            </div>
         </main>
     </body>
 </html>
