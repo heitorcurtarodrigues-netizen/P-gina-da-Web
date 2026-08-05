@@ -1,62 +1,85 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" 
-        content="width=device-width, initial-scale=1.0">
-        <title>Blog</title>
-        <style>
-            header {
-                background-color: #740000;
-                color: #FFFFFF;
-                text-align: center;
-                max-width: 800px;
-                margin: 0 auto;
-                padding: 16px;
-            }
-            main {
-                background-color: #FFFFFF;
-                color: #740000;
-                max-width: 800px;
-                margin: 0 auto;
-                padding: 16px;
-                display: flex;
-            }
-            img {
-                width: 80px;
-                height: 80px;
-            }
-            .artigo-autor {
-                font-weight: bold;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <h1>Meu Blog de Futebol</h1>
-            <p>Vou compartilhar notícias, análises e curiosidades sobre o mundo da bola.</p>
-        </header>
-        <main>
-            <img src="imagem-blog.png" alt="Ilustração vetorial minimalista de uma bola de futebol centralizada sobre um livro aberto. Acima da bola, há cinco setas apontando para cima. A arte utiliza uma paleta de cores em vermelho escuro para os contornos e detalhes, com um fundo totalmente branco.">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+        header {
+            background-color: #740000;
+            color: #FFFFFF;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 16px;
+        }
+
+        main {
+            background-color: #FFFFFF;
+            color: #740000;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 16px;
+        }
+        article {
+            display: flex;
+        }
+
+        img {
+            width: 80px;
+            height: 80px;
+        }
+
+        .artigo-autor {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Meu Blog de Futebol</h1>
+        <p>Vou compartilhar notícias, análises e curiosidades sobre o mundo da bola.</p>
+    </header>
+    <main>
+        <article>
+            <img src="imagem-blog.png"
+                alt="Ilustração vetorial minimalista de uma bola de futebol centralizada sobre um livro aberto. Acima da bola, há cinco setas apontando para cima. A arte utiliza uma paleta de cores em vermelho escuro para os contornos e detalhes, com um fundo totalmente branco.">
             <div>
                 <h2>Meu primeiro post</h2>
                 <p class="artigo-autor">Por: Heitor Costa Curta Rodrigues</p>
-                <p>Boas-vindas ao meu novo blog! Aqui vou postar tudo sobre os campeonatos nacionais, contratações e as principais histórias dos gramados ao redor do mundo
+                <p>Boas-vindas ao meu novo blog! Aqui vou postar tudo sobre os campeonatos nacionais, contratações e as
+                principais histórias dos gramados ao redor do mundo
                 <button>❤️<span>0</span></button>
                 <button>❤️<span>0</span></button>
             </div>
-        </main>
-    </body>
-    <script>
-        const botoes = document.querySelectorAll("button");
+        </article>
+        <article>
+            <img src="imagem-blog.png"
+                alt="Ilustração vetorial minimalista de uma bola de futebol centralizada sobre um livro aberto. Acima da bola, há cinco setas apontando para cima. A arte utiliza uma paleta de cores em vermelho escuro para os contornos e detalhes, com um fundo totalmente branco.">
+            <div>
+                <h2>Meu segundo post</h2>
+                <p class="artigo-autor">Por: Heitor Costa Curta Rodrigues</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou postar tudo sobre os campeonatos nacionais, contratações e as
+                principais histórias dos gramados ao redor do mundo
+                <button>❤️<span>0</span></button>
+                <button>❤️<span>0</span></button>
+            </div>
+        </article>
+    </main>
+</body>
+<script>
+    const botoes = document.querySelectorAll("button");
 
-        botoes.forEach(function(botao) {
-            botao.addEventListener("click", botaoClicado);
-            function botaoClicado() {
-                console.log("fui clicado");
-                let texto = botao.querySelector("span");
-                texto.textContent++;
-            }
-        });
-    </script>
+    botoes.forEach(function (botao) {
+        botao.addEventListener("click", botaoClicado);
+        function botaoClicado() {
+            console.log("fui clicado");
+            let texto = botao.querySelector("span");
+            texto.textContent++;
+        }
+    });
+</script>
+
 </html>
